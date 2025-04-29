@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Board for Ana 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio autoplay loop>
+    <source src="aespa_lucid_dream.mp3" type="audio/mp3">
+</audio>
+
+<div class="board">
+    <!-- Quote Stickers -->
+    <div class="sticker quote" style="top: 15%; left: 10%;">You really make my heart go wooshh!! ✨</div>
+    <div class="sticker bubble" style="top: 20%; left: 35%;">🌸 Stay Strong 🌸</div>
+    <div class="quote" style="top: 55%; left: 20%;">You Got This 💪</div>
+    <div class="sticker star" style="top: 50%; left: 70%;">Believe in Yourself 🌟</div>
+    <div class="quote" style="top: 75%; left: 70%;">Keep Going, You're Amazing 🌷</div>
+    <div class="quote" style="top: 40%; left: 5%;">You are the anxiety to my insomnia. ✨</div>
+    <div class="quote" style="top: 60%; left: 45%;">Ana, eres suficiente para ti misma, ¡no necesitas a nadie!❤️</div>
+
+    <!-- Images (added 3 images now) -->
+    <div class="image circle" style="top: 5%; left: 50%;" id="aespa">
+        <img src="aespa.png" alt="Cute Girl">
+    </div>
+    <div class="image cutout" style="top: 80%; left: 15%;" id="aespa">
+        <img src="masha.png" alt="Flower">
+    </div>
+    <div class="image cutout" style="top: 5%; left: 85%;" id="aespa">
+        <img src="goth.png" alt="Sticker 1">
+    </div>
+    <div class="image cutout" style="top: 80%; left: 55%;" id="aespa">
+        <img src="porsche.png" alt="Sticker 2">
+    </div>
+    <div class="image cutout" style="top: 80%; left: 30%;" id="aespa">
+        <img src="imagee.jpg" alt="Sticker 3">
+    </div>
+    <div class="image cutout" style="top: 43%; left: 35%;" id="aespa">
+        <img src="bmw.png" alt="Sticker 3">
+    </div>
+
+    <!-- Notes -->
+    <div class="note heart click-me" style="top: 40%; left: 50%;" onclick="showMessage()">Click Me 💌</div>
+    <div class="note torn" style="top: 10%; left: 70%;">You are Loved by your friends soo dont be sad 🤍</div>
+
+    <!-- Showering Emojis (Rain Effect) -->
+    <div class="emoji rain" style="left: 10%; animation-delay: 0s;">💖</div>
+    <div class="emoji rain" style="left: 20%; animation-delay: 1s;">✨</div>
+    <div class="emoji rain" style="left: 30%; animation-delay: 2s;">🌸</div>
+    <div class="emoji rain" style="left: 40%; animation-delay: 3s;">💫</div>
+    <div class="emoji rain" style="left: 50%; animation-delay: 4s;">🌟</div>
+    <div class="emoji rain" style="left: 60%; animation-delay: 5s;">💖</div>
+    <div class="emoji rain" style="left: 70%; animation-delay: 6s;">✨</div>
+    <div class="emoji rain" style="left: 80%; animation-delay: 7s;">🌸</div>
+    <div class="emoji rain" style="left: 90%; animation-delay: 8s;">💫</div>
+</div>
+
+<!-- Popup Letter -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span onclick="closeMessage()" class="close">&times;</span>
+    <p>Dear Ana, you are beautiful, powerful, and unstoppable. Please never stop being like this!. Your'e the first girl i've ever met who holds aura like this. Just remember you don't need anyone. You're self sufficient for yourself. I know how sometimes hard its for you to cope up with these things and I am also sure some nights those anxiety thoughts make u feel vulnerable. But you always comeback strong with that sexy smile of yours. I know i have also have made u hurt once and I somehow hope maybe one day we can start over again and I can gain your trust back. LOVE XOXO 💖🖤</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

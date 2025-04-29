@@ -1,0 +1,166 @@
+/* Same imports */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f9e0ff, #ffe0f0, #e0f7ff);
+    font-family: 'Patrick Hand', cursive;
+    overflow-x: hidden;
+}
+
+.board {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    z-index: 1;
+}
+
+.note, .sticker, .image, .quote {
+    position: absolute;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Gloria Hallelujah', cursive;
+    max-width: 250px;
+    min-width: 150px;
+}
+
+/* Specific Styles */
+.sticker {
+    background: #fff7d9;
+    border-radius: 20px;
+    font-size: 1.5em;
+}
+
+.sticker.star {
+    background: #e0f7ff;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 58%, 79% 91%, 50% 70%, 21% 91%, 32% 58%, 2% 35%, 39% 35%);
+}
+
+.sticker.bubble {
+    background: #fff7d9;
+    border-radius: 20px;
+}
+
+.note.heart {
+    background: #ffe0f0;
+    border-radius: 50%;
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+}
+
+.note.torn {
+    background: #f9e0ff;
+    border: 2px dashed #e09fff;
+    transform: rotate(-5deg);
+}
+
+.quote {
+    background: #f0e0ff;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 1.8em;
+}
+
+.emoji.rain {
+    position: absolute;
+    font-size: 2.5em;
+    animation: rain 6s linear infinite;
+}
+
+@keyframes rain {
+    0% {
+        top: -10%;
+        opacity: 1;
+    }
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+/* Floating images */
+.image.cutout img, .image.circle img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.image.cutout {
+    background: none;
+    padding: 0;
+    box-shadow: none;
+}
+
+/* Hover Effects */
+.sticker:hover, .note:hover, .quote:hover, .image:hover {
+    transform: rotate(5deg) scale(1.05);
+}
+
+.sticker.star:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+
+/* Popup styling */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    padding-top: 100px;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.popup-content {
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border: 2px solid #ffc0cb;
+    width: 70%;
+    text-align: center;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1.5em;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Animation for Click Me 💌 */
+.click-me {
+    animation: shake 2s infinite;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    50% { transform: rotate(-2deg); }
+    75% { transform: rotate(2deg); }
+    100% { transform: rotate(0deg); }
+}
+
+#aespa {
+    box-shadow: none;
+    background: none;
+}
